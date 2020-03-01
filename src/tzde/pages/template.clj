@@ -8,7 +8,7 @@
            :label "Home"
            :component index}
           {:uri "/talks"
-           :label "Talks (TBD)"
+           :label "Talks"
            :component talks}
           {:uri "/articles"
            :label "Articles (TBD)"
