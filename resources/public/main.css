@@ -1,8 +1,31 @@
 body {
- 
+    font-family: 'Open Sans';
+    margin: 0px;
 }
 
-ol.menu {
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Quicksand';
+}
+
+div.header {
+    color: white;
+    background-color: purple;
+    padding: 1em;
+}
+
+div.header a {
+    color: white;
+    text-decoration: none;
+}
+
+div.header ol.menu {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -11,10 +34,29 @@ ol.menu {
     margin: 0px;
 }
 
-ol.menu li {
+div.header ol.menu li {
     padding: 0px;
     margin: 0px;
     margin-right: 1em;
 }
 
+div.body {
+    padding: 1em;
+    flex: 1;
+}
 
+table.talk-table {
+    text-align: left;
+    border-spacing: 1em;
+}
+
+table.talk-table th {
+    color: purple;
+    font-weight: bolder;
+}
+
+div.footer {
+    background-color: purple;
+    color: white;
+    padding: 1em;
+}

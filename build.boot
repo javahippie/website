@@ -9,7 +9,8 @@
                             [ring/ring-jetty-adapter "1.6.3"]
                             [ring/ring-devel "1.6.3"]
                             [compojure "1.6.1"]
-                            [rum "0.11.4"]])
+                            [rum "0.11.4"]
+                            [clojure.java-time "0.3.2"]])
 
 (task-options!
  aot {:namespace   #{'tzde.core}}

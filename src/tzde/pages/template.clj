@@ -1,13 +1,17 @@
 (ns tzde.pages.template
   (:require [rum.core :refer [defc]]
             [tzde.pages.index :refer [index]]
-            [tzde.pages.error :refer [error]]))
+            [tzde.pages.error :refer [error]]
+            [tzde.pages.talks :refer [talks]]))
 
 (def nav [{:uri "/"
            :label "Home"
            :component index}
           {:uri "/talks"
            :label "Talks (TBD)"
+           :component talks}
+          {:uri "/articles"
+           :label "Articles (TBD)"
            :component error}])
 
 (defc menu []
@@ -37,9 +41,11 @@
    [:head
     [:title "Tim Zöller"]
     [:link {:rel "stylesheet" 
-            :href "/main.css"}]]
+            :href "/main.css"}]
+    [:link {:rel "stylesheet" 
+            :href "https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap"}]]
    [:body 
-    [:div 
+    [:div {:class "container"}
      (header) 
      [:div {:class "body"}
       (body)] 
