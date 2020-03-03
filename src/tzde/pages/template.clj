@@ -12,7 +12,9 @@
            :component talks}
           {:uri "/articles"
            :label "Articles (TBD)"
-           :component error}])
+           :component error}
+          {:uri "https://javahippie.net"
+           :label "Blog (External)"}])
 
 (defc menu []
   [:ol
