@@ -1,14 +1,6 @@
 (ns tzde.data.talks
   (:require [java-time :refer [local-date-time]]))
 
-(defn is-in-past? [{date :date}]
- (> 1 (compare date (local-date-time))))
-
-(defn is-in-future? [event]
-  (not (is-in-past? event)))
-
-
-
 (def talklist [{:title "Web3j - Das Tor zur Blockchain für die Java Welt"
                 :date (local-date-time 2018 9 28 11 00)
                 :venue "JUG Saxony Day 2018, Dresden"

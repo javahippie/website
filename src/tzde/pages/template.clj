@@ -2,7 +2,8 @@
   (:require [rum.core :refer [defc]]
             [tzde.pages.index :refer [index]]
             [tzde.pages.error :refer [error]]
-            [tzde.pages.talks :refer [talks]]))
+            [tzde.pages.talks :refer [talks]]
+            [tzde.pages.articles :refer [articles]]))
 
 (def nav [{:uri "/"
            :label "Home"
@@ -11,8 +12,8 @@
            :label "Talks"
            :component talks}
           {:uri "/articles"
-           :label "Articles (TBD)"
-           :component error}
+           :label "Articles"
+           :component articles}
           {:uri "https://javahippie.net"
            :label "Blog (External)"}])
 

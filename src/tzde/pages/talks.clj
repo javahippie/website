@@ -1,7 +1,8 @@
 (ns tzde.pages.talks
   (:require [rum.core :refer [defc]]
             [java-time :as time]
-            [tzde.data.talks :refer [talklist is-in-future? is-in-past?]]))
+            [tzde.data.talks :refer [talklist]]
+            [tzde.dateutil :refer [is-in-future? is-in-past?]]))
 
 (defn build-row [{title :title
                   date :date
